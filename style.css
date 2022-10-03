@@ -1,0 +1,400 @@
+/* https://flatuicolors.com/palette/defo */
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #ecf0f1;
+}
+
+/* *************** Header *************** */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #212529;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header > div {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-name a {
+  font-size: 1.2rem;
+  color: #1ec896;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.link-name a:hover {
+  font-size: 1.3rem;
+}
+
+.link-media a {
+  margin: 0 0.3rem;
+}
+
+.link-media svg {
+  width: 25px;
+  height: 25px;
+  fill: #1ec896;
+  transition: all 0.3s ease;
+}
+
+.link-media svg:hover {
+  width: 28px;
+  height: 28px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  color: #ecf0f1;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-name a {
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+  }
+
+  .link-name a:hover {
+    font-size: 1.7rem;
+  }
+
+  .link-media a {
+    margin: 0 0.6rem;
+  }
+
+  .link-media svg {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .link-media svg:hover {
+    width: 34px;
+    height: 34px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.section {
+  width: 80%;
+  margin: 1rem auto;
+  height: auto;
+  /* background-image: url("assets/image-contact.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: center; */
+  background-color: #212529;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *************** Contact Form *************** */
+
+.contact-form {
+  width: 100%;
+  /* height: 700px; */
+  padding: 1rem;
+  /* background-color: #2c3e50; */
+  background-color: rgba(20, 20, 20, 0.6);
+  border-radius: 30px;
+}
+
+.contact-form legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem auto;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.contact-form legend:nth-child(2) {
+  font-size: 1.6rem;
+  color: #1ec896;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #1ec896;
+  transition: border-bottom 0.2s ease;
+  color: #ecf0f1;
+  font-size: 0.9rem;
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+  border-bottom: 3px solid #ecf0f1;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-bottom: 3px solid #ecf0f1;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form *::placeholder {
+  /* en .contact-form a todos los elementos que tenga el atributo::placeholder */
+  color: #ecf0f1;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.contact-form input[type="submit"] {
+  width: 50%;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #ecf0f1;
+  border-top: 3px solid #1ec896;
+  border-bottom: 3px solid #1ec896;
+  transition: all 0.2s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  border-top: 3px solid #ecf0f1;
+  border-bottom: 3px solid #ecf0f1;
+}
+
+/* ***** Mensaje de correcto o incorrecto al final del formulario ***** */
+.contact-form-correct-response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-correct-response p {
+  margin: 0 0 1rem 0;
+  color: #1ec896;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form-correct-response svg {
+  width: 40px;
+  fill: #1ec896;
+}
+
+.contact-form-incorrect-response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-incorrect-response p {
+  margin: 0 0 1rem 0;
+  color: #dc3545;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form-incorrect-response svg {
+  width: 40px;
+  fill: #dc3545;
+}
+
+/* ***** Mensaje de incorrecto al final de cada input con el atributo "data-required" ***** */
+.contact-form-error {
+  /* aparecerá dinámicamente con JavaScript */
+  display: none;
+  border-radius: 20px;
+  padding: 0.3rem;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  background-color: #dc3545;
+  color: #ecf0f1;
+  text-align: center;
+  transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+  /* cuando el mensaje de error esté activo */
+  display: block;
+  width: 100%;
+  animation: show-message 1s 1 normal 0s ease-out both;
+  /* animation: animación duración veces_a_repetir forma_de_ejecución delay_o_retardo efecto_animación conservarción_estilos_cuando_termine; */
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-form legend {
+    font-size: 1.5rem;
+  }
+
+  .contact-form legend:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 40%;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-form legend {
+    font-size: 1.6rem;
+  }
+
+  .contact-form legend:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 30%;
+    font-size: 1.1rem;
+  }
+}
+
+/* *************** Loader *************** */
+.wave-loader {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  width: 5px;
+  height: 35px;
+  background: linear-gradient(45deg, #ecf0f1, #1ec896, #ecf0f1);
+  margin: 2.5px;
+  animation: wave 1s linear infinite;
+  border-radius: 5px;
+}
+
+.wave:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* *************** Aditional Class *************** */
+.none {
+  display: none;
+}
