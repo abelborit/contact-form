@@ -9,7 +9,7 @@ function contactForm() {
 
   /* objeto que hace referencia a las expresiones regulares */
   const expresiones = {
-    name: /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/,
+    name: /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,20}$/,
     email:
       /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/,
     subject: /^.{1,40}$/,
@@ -20,7 +20,7 @@ function contactForm() {
   const mensajes = {
     mensajeVacio: "Este es un campo requerido, no puede ir vacio",
     mensajeCoincidenciaName:
-      "Este campo solo acepta letras mayúsculas, minúsculas y espacios en blanco",
+      "Este campo solo acepta hasta 20 caracteres, letras mayúsculas, minúsculas y espacios en blanco",
     mensajeCoincidenciaEmail: "Email incorrecto",
     mensajeCoincidenciaSubject: "El Asunto no debe exceder los 40 caracteres",
     mensajeCoincidenciaComments:
@@ -108,12 +108,12 @@ function contactForm() {
   document.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const $loader = document.querySelector(".contact-form-loader");
-    const $responseCorrect = document.querySelector(
-      ".contact-form-correct-response"
+    const $loader = document.getElementById("loader");
+    const $responseCorrect = document.getElementById(
+      "contact-form-correct-response"
     );
-    const $responseIncorrect = document.querySelector(
-      ".contact-form-incorrect-response"
+    const $responseIncorrect = document.getElementById(
+      "contact-form-incorrect-response"
     );
 
     $loader.classList.remove("none");

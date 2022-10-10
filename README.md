@@ -1,15 +1,15 @@
 # Revisa el proyecto terminado en: [Proyecto Contact Form](https://abelborit.github.io/contact-form/)
 
-Este es un modelo para utilizar un _formulario de contacto_ con Fetch y el API de [Form Submit](https://formsubmit.co/).
+Este es un modelo para utilizar un _Contact Form_ o formulario de contacto con Fetch y el API de [Form Submit](https://formsubmit.co/).
 
 ---
 
 Cuenta con:
 
 1. Maquetación HTML
-1. Estilos CSS
+1. Estilos CSS con Flex
 1. Funcionalidad con JavaScript
-1. Uso del API de Form Submit para enviar los datos del formulario
+1. Uso del API de Form Submit para enviar los datos del formulario al correo que se coloque
 
 ## Comunícate conmigo:
 
